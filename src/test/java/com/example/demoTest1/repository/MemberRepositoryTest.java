@@ -43,8 +43,7 @@ public class MemberRepositoryTest extends DemoTest1ApplicationTests {
     }
 
         @Test
-        //@Transactional  //실제값에 영향을 미치지 않음
-
+        @Transactional  //실제값에 영향을 미치지 않음
         public void update() {
             Optional<Member> member = memberRepository.findById(2);
 
